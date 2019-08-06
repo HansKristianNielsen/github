@@ -1,0 +1,418 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+body, html{
+	height: 100%;
+	width: 100%;
+}
+h2{
+	font-size: 36px;
+}
+
+
+/*---------header med nav--------*/
+header{
+	width: 100%;
+	height: 110px;
+	background-color: rgba(0,89,82,0.5);
+	text-align: center;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.top{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 10%;
+	padding-top: 20px;
+}
+.logo img{
+	width: 100%;
+}
+.menu{
+	width: 65%;
+	text-align: right;
+	padding-bottom: 33px;
+}
+.menu ul{
+	list-style-type: none;
+	position: relative;
+
+}
+.menu li{
+	display: inline-block;
+	
+}
+.menu a{
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 45px 10px 44px 10px;
+}
+.menu ul ul{
+	display: none;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 
+}
+.menu ul ul a{
+	padding: 0 10px;
+}
+.menu ul li{
+	position: relative;
+}
+.menu ul li:hover{
+	background-color: #005b7f;
+	color: #fcfcfc;
+	padding
+}
+.menu ul li:hover > ul{
+	display: flex;
+	width: 110%;
+	text-align: left;
+	background-color: rgba(0,91,127,0.5);
+
+}
+
+/*-------mobil nav-------*/
+
+.btnMenu{
+	cursor: pointer;
+	position: absolute;
+	top: 17px;
+	right: 4.5%;
+	font-size: 50px;
+	color: #1f562b;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	outline: none;
+	padding: 5px 0;
+	display: none;
+}
+.fas{
+	padding: 0 5px;
+}
+.btnMenu i:hover{
+	background-color: #005b7f;
+	color: #ffffff;
+	border-radius: 5px;
+
+}
+#mobilMenu{
+  display: none;
+  background-color: #ffffff;
+  width: 30%;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  right: 0;
+  top: 90px;
+  border-radius: 25px;
+}
+#mobilMenu ul{
+	list-style-type: none;
+}
+#mobilMenu a{
+  float: none;
+  color: #1f562b;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 25px;
+
+}
+#mobilMenu a:hover{
+  background-color: #1f562b;
+  color: #97d738;
+}
+/*
+
+
+
+/*---------header med nav slut--------*/
+
+/*---------topbillede --------*/
+
+.topBillede{
+	width: 100%;
+	height: 590px;
+	background-image: url(../images/topbillede.jpg);
+	background-position: center;
+	position: relative;
+}
+.optagelse{
+	width: 54%;
+	text-align: center;
+	background-color: rgba(255,255,255,0.5);
+	position: absolute;
+	left: 22.5%;
+	top: 280px;
+}
+.optagelse h1{
+	padding: 30px 0 30px 0;
+	font-size: 36px;
+}
+.button a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.button{
+	margin-bottom: 45px;
+	border-style: none;
+	width: 35%;
+	background-color: #17c2a4;
+	padding: 10px 1%;
+	box-shadow: 0 5px #005952;
+	border-radius: 3px;
+}
+		/*evt hover*/
+
+/*---------topbillede slut--------*/
+
+/*---------section ring --------*/
+
+.ring{
+	width: 100%;
+	background-color: #ffffff;
+}
+.ring div{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.ring h6{
+	padding: 30px 0;	
+	font-size: 38px;
+}
+.ring span{
+	color: #17c2a4;
+}
+
+/*---------sevction ring slut--------*/
+
+/*---------sevction mission og undervisere--------*/
+
+.mission, .undervisere{
+	width: 100%;
+	background-color: #17c2a4;
+	text-align: center;
+	padding: 45px 0;
+	margin: 0 auto;
+}
+.undervisere{
+	background-color: #e7f1f8;
+}
+.mission h2, .mission p, .undervisere h2, .undervisere p, #kontakt h2, #kontakt p{
+	width: 90%;
+	margin: 0 auto;
+}
+.mission h2, #kontakt h2{
+	color: #ffffff;
+}
+.mission p, #kontakt p{
+	padding: 20px 0;
+	color: #ffffff;
+}
+.mission h3{
+	color: #ffffff;
+	padding-top: 35px;
+
+}
+.undervisere h2{
+	color: #3c4761;
+}
+.undervisere p{
+	padding: 20px 0;
+	color: #3c4761;
+}
+.undervisere h5{
+	font-size: 36px;
+	color: #3c4761;
+}
+.undervisere h4{
+	color: #58ccb7;
+}
+.mission hr, .undervisere hr, #kontakt hr{
+	width: 5%;
+	margin: 0 auto;
+	border: 1.5px solid #000000;
+}
+.undervisere hr{
+	border: 1.5px solid #c8d9e5;
+}
+.mission section, .undervisere section{
+	width: 90%;
+	display: flex;
+	margin: 45px auto 0 auto;
+}
+.mission article, .undervisere article{
+	width: 25%;
+}
+.mission img{
+		height: 135px;
+}
+.undervisere div{
+		height: 200px;
+		width: 200px;
+		background-color: #3c4761;
+		border-radius: 50%;
+		margin: 0 auto;
+		margin-bottom: 45px;
+}
+
+
+/*---------sevction mission og undervisere slut--------*/
+
+/*---------sevction kontakt form--------*/
+
+#kontakt{
+	width: 100%;
+	background-color: #105c80;
+	text-align: center;
+	padding: 45px 0;
+	margin: 0 auto;
+}
+#kontakt hr{
+	border: 1.5px solid #30bae7;
+}
+#kontakt form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#kontakt input{
+	width: 46%;
+	margin: 2%;
+	padding: 10px 2%;
+	border-radius: 3px;
+	border-style: none;
+	background-color: #30bae7;
+	color: #ffffff;
+}
+#kontakt textarea{
+	width: 96%;
+	border-radius: 3px;
+	background-color: #30bae7;
+	border-style: none;
+	padding: 10px 2%;
+	color: #ffffff;
+	margin: 15px 0;
+}
+#kontakt input[type=submit]{
+	background-color: #0b4764;
+	padding: 15px 2%;
+	width: 33.33%;
+	margin-bottom: 100px;
+}
+/* ikke færdig
+#succes{
+	z-index: 100;
+
+	background-color: #83ac1f;
+	background-size: cover;
+	width: 250px;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 30%;
+	right: 40.5%;
+	
+	border: 1.5px solid #cccccc;
+	display: none;
+}*/
+
+/*---------sevction kontakt form slut--------*/
+
+
+/*---------totop--------*/
+#backToTop{
+	z-index: 10;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 50px;
+	color: #0b4764;
+	padding: 15px 2%;
+	border-style: none;
+	border-radius: 50px;
+	cursor: pointer;
+	display: none;
+}
+
+/*---------totop slut--------*/
+/*------------------skaerm---------------------*/
+@media screen and (min-width: 860px) and (max-width: 1024px)
+{
+.optagelse h1 {
+    font-size: 28px;
+}
+.button a {
+    font-size: 16px;
+}
+.ring h6 {
+    font-size: 30px;
+}
+.mission section, .undervisere section {
+    flex-wrap: wrap;
+}
+.mission article, .undervisere article {
+    width: 50%;
+ }
+}
+/*------------------tablet---------------------*/
+@media screen and (min-width: 460px) and (max-width: 859px)
+{
+.menu{
+	display: none;
+	}
+.btnMenu{
+		display: block;
+	}
+.optagelse {
+    width: 85%;
+    left: 6.5%;
+}
+.optagelse h1 {
+    font-size: 24px;
+   }
+.button a {
+    font-size: 16px;
+}
+.button {
+    width: 45%;
+}
+.ring h6 {
+    padding: 30px 0;
+    font-size: 18px;
+}
+}
+.mission section, .undervisere section {
+    flex-wrap: wrap;
+}
+.mission article, .undervisere article {
+    width: 50%;
+ }
+#kontakt input[type="submit"] {
+    width: 43.33%;
+}
+/*------------------mobil----------------------*/
+@media screen and (max-width: 459px)
+{
+	/*mangler mobil responsiv*/
+}
